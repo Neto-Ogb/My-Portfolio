@@ -3,242 +3,316 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Netonna Ogbuefi</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <title>Netonna Ogbuefi — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Public+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <div class="grid-field" aria-hidden="true"></div>
+
   <nav class="nav-head">
-    <a href="#" class="nav-name">Netonna Ogbuefi</a>
+    <a href="#top" class="nav-name">Netonna Ogbuefi</a>
     <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
     </ul>
     <a href="mailto:brad12kool@gmail.com" class="nav-cta">Get in touch</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <!-- HERO -->
-  <div class="hero-all">
-    <div class="hero">
-      <p class="hero-label">Full Stack Developer — Lagos, Nigeria</p>
-      <h1 class="hero-name">Netonna<br>Ogbuefi</h1>
+  <header class="hero" id="top">
+    <p class="eyebrow">// full stack developer — lagos, nigeria</p>
+    <h1 class="hero-name">
+      Netonna<br />
+      <span class="hero-name-italic">Ogbuefi</span>
+    </h1>
+    <div class="hero-row">
       <p class="hero-desc">
-        I build things for the web — from interfaces people enjoy using
-        to the backend logic that keeps them running.
+        I build things for the web — interfaces people enjoy using,
+        and the backend logic that keeps them running. Currently studying
+        Industrial Mathematics &amp; Computer Science at Covenant University.
       </p>
       <div class="hero-actions">
-        <a href="NETONNA_OGBUEFI_RESUME.pdf" download="Netonna_Ogbuefi_CV.pdf" class="link-primary">Download CV</a>
-        <a href="#experience" class="link-secondary">See my work</a>
-      </div>
-      <div class="hero-socials">
-        <a href="https://github.com/Neto-Ogb" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/netonna-ogbuefi-b2aab9380/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.instagram.com/bradoggb/" target="_blank" rel="noopener">Instagram</a>
-        <a href="mailto:brad12kool@gmail.com">brad12kool@gmail.com</a>
+        <a href="NETONNA_OGBUEFI_RESUME.pdf" download="Netonna_Ogbuefi_CV.pdf" class="btn-primary">Download CV</a>
+        <a href="#projects" class="btn-secondary">See my work &rarr;</a>
       </div>
     </div>
-    <div class="profile-image">
-      <img class="pfp-img" src="pfp.png" width="300px" height="300px">
+    <div class="hero-photo-wrap">
+      <img class="hero-photo" src="pfp.png" alt="Portrait of Netonna Ogbuefi" />
+      <span class="photo-tag">// my favourite color is green</span>
     </div>
-  </div>
+    <div class="hero-socials">
+      <a href="https://github.com/brad12kool" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/netonna-ogbuefi-b2aab9380/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/bradoggb/" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:brad12kool@gmail.com">Email</a>
+    </div>
+  </header>
 
-  <!-- SERVICES -->
-  <section class="section" id="services">
-    <p class="section-label">Services</p>
-    <div class="services-list">
-      <div class="service-item">
-        <h3 class="service-title">UI Design</h3>
-        <p class="service-desc">Interface design in Figma — layouts that are clear, functional, and considered without being overworked.</p>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="section-label">// about</p>
+    <div class="about-grid">
+      <div class="about-body">
+        <p>
+          I'm a full stack developer working across the stack — Figma for design,
+          React and Tailwind on the frontend, Node.js on the backend. I like understanding
+          how things fit together, not just making them look good.
+        </p>
+        <p>
+          Outside of freelance and personal projects, I study Industrial Mathematics
+          and Computer Science, which shapes how I think about structure, edge cases,
+          and the logic underneath an interface.
+        </p>
       </div>
-      <div class="service-item">
-        <h3 class="service-title">Frontend Development</h3>
-        <p class="service-desc">Responsive UIs built with React, Next.js, Tailwind, and vanilla HTML and CSS. Fast, accessible, and easy to maintain.</p>
-      </div>
-      <div class="service-item">
-        <h3 class="service-title">Backend Development</h3>
-        <p class="service-desc">APIs and server logic in Node.js. Structured, documented, and built to handle real usage without surprises.</p>
-      </div>
-      <div class="service-item">
-        <h3 class="service-title">Full Stack Delivery</h3>
-        <p class="service-desc">End-to-end ownership of a project — from the first wireframe to a deployed, working product.</p>
-      </div>
+      <dl class="about-facts">
+        <div class="fact">
+          <dt>Based in</dt>
+          <dd>Lagos, Nigeria</dd>
+        </div>
+        <div class="fact">
+          <dt>Studying</dt>
+          <dd>Industrial Mathematics &amp; CS, Covenant University</dd>
+        </div>
+        <div class="fact">
+          <dt>GPA</dt>
+          <dd>4.30 / 5.00</dd>
+        </div>
+        <div class="fact">
+          <dt>Focus</dt>
+          <dd>Full stack web · design systems</dd>
+        </div>
+      </dl>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
-    <p class="section-label">Experience</p>
+    <p class="section-label">// experience</p>
     <div class="exp-list">
 
       <div class="exp-item">
         <div class="exp-meta">
-          <p class="exp-date">2024 — Present</p>
-          <p class="exp-type">Internship</p>
+          <p class="exp-date">2026</p>
+          <p class="exp-type">Internship · 2 months</p>
         </div>
-        <div>
+        <div class="exp-body">
           <p class="exp-role">Software Engineering Intern</p>
-          <p class="exp-company">HabariPay</p>
+          <p class="exp-company">GTCO — Squad — HabariPay</p>
           <p class="exp-desc">
-            Working on team-based software development at a fintech company — contributing to project planning, development, and implementation. Getting practical exposure to how a professional engineering team ships and maintains software.
+            Worked on an AI-based project bringing AI agents into customer support
+            workflows. Contributed to the design and frontend, and some backend,
+            automating routine support tasks and providing accurate, context-aware
+            responses — improving response times and reducing workload on human
+            support teams.
           </p>
           <div class="exp-tags">
-            <span class="exp-tag">React</span>
-            <span class="exp-tag">JavaScript</span>
-            <span class="exp-tag">Node.js</span>
-            <span class="exp-tag">REST APIs</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Figma</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Git</span>
+            <span class="tag">REST APIs</span>
           </div>
         </div>
       </div>
 
-    </div>
-  </section>
+      <div class="exp-item">
+        <div class="exp-meta">
+          <p class="exp-date">2026</p>
+          <p class="exp-type">Volunteer · few weeks</p>
+        </div>
+        <div class="exp-body">
+          <p class="exp-role">Frontend Engineer</p>
+          <p class="exp-company">ScaleUpBuild</p>
+          <p class="exp-desc">
+            Built out multiple UI screens, translating design mockups into
+            responsive and accessible web pages. Worked with the team on reusable
+            components and consistent styling across the application.
+          </p>
+          <div class="exp-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Figma</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+      </div>
 
-  <!-- EDUCATION -->
-  <section class="section" id="education">
-    <p class="section-label">Education</p>
-    <div class="edu-block">
-      <div class="edu-meta">
-        <p class="edu-date">2022 — 2028</p>
-      </div>
-      <div>
-        <p class="edu-school">Covenant University</p>
-        <p class="edu-degree">B.Sc. Industrial Mathematics &amp; Computer Science</p>
-        <p class="edu-gpa">4.30 GPA <span>/ 5.00</span></p>
-      </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section class="section" id="projects">
-    <p class="section-label">Projects</p>
+    <p class="section-label">// projects</p>
     <div class="projects-list">
 
-      <div class="project-item">
-        <div class="project-left">
-          <p class="project-title">Password Generator</p>
-          <p class="project-desc">A tool for generating secure passwords with configurable rules. Built with HTML, CSS, and JavaScript.</p>
-          <div class="exp-tags">
-            <span class="exp-tag">HTML</span>
-            <span class="exp-tag">CSS</span>
-            <span class="exp-tag">JavaScript</span>
-          </div>
-        </div>
-        <a href="https://github.com/Neto-Ogb/Password-Generator" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
-      </div>
-
-      <div class="project-item">
-        <div class="project-left">
-          <p class="project-title">Color Palette Generator</p>
-          <p class="project-desc">Generates color palettes for design use. Handy for quickly exploring combinations without opening Figma.</p>
-          <div class="exp-tags">
-            <span class="exp-tag">HTML</span>
-            <span class="exp-tag">CSS</span>
-            <span class="exp-tag">JavaScript</span>
-          </div>
-        </div>
-        <a href="https://github.com/Neto-Ogb/Color-Palette-Generator" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
-      </div>
-
-      <div class="project-item">
-        <div class="project-left">
-          <p class="project-title">Bookmark Saver</p>
-          <p class="project-desc">A bookmark management app for saving and organizing links — built as a clean, functional browser utility.</p>
-          <div class="exp-tags">
-            <span class="exp-tag">HTML</span>
-            <span class="exp-tag">CSS</span>
-            <span class="exp-tag">JavaScript</span>
-          </div>
-        </div>
-        <a href="https://github.com/Neto-Ogb/BookMark-Saver" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
-      </div>
-
-      <div class="project-item">
+      <a class="project-item" href="https://github.com/Neto-Ogb/Task-Manager---React" target="_blank" rel="noopener">
         <div class="project-left">
           <p class="project-title">Task Manager</p>
-          <p class="project-desc">Designed in Figma then built out — a task management app for tracking and organizing work.</p>
+          <p class="project-desc">Designed in Figma, then built out — a task management app for tracking and organizing work.</p>
           <div class="exp-tags">
-            <span class="exp-tag">Figma</span>
-            <span class="exp-tag">HTML</span>
-            <span class="exp-tag">CSS</span>
-            <span class="exp-tag">JavaScript</span>
-            <span class="exp-tag">React</span>
-            <span class="exp-tag">Vite</span>
+            <span class="tag">Figma</span>
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
           </div>
-          <a href="https://github.com/Neto-Ogb/Task-Manager---React" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
         </div>
-      </div>
+        <span class="project-link">View on GitHub &rarr;</span>
+      </a>
+
+      <a class="project-item" href="https://github.com/Neto-Ogb/Weather-API" target="_blank" rel="noopener">
+        <div class="project-left">
+          <p class="project-title">Weather Forecast API</p>
+          <p class="project-desc">A weather landing page fetching live data from the OpenWeather API — temperature, humidity, and forecasts worldwide.</p>
+          <div class="exp-tags">
+            <span class="tag">React</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Vite</span>
+          </div>
+        </div>
+        <span class="project-link">View on GitHub &rarr;</span>
+      </a>
+
+      <a class="project-item" href="https://github.com/Neto-Ogb/Color-Palette-Generator" target="_blank" rel="noopener">
+        <div class="project-left">
+          <p class="project-title">Color Palette Generator</p>
+          <p class="project-desc">Generates color palettes for design use — quick to explore combinations without opening Figma.</p>
+          <div class="exp-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <span class="project-link">View on GitHub &rarr;</span>
+      </a>
+
+      <a class="project-item" href="https://github.com/Neto-Ogb/Password-Generator" target="_blank" rel="noopener">
+        <div class="project-left">
+          <p class="project-title">Password Generator</p>
+          <p class="project-desc">A tool for generating secure passwords with configurable rules.</p>
+          <div class="exp-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <span class="project-link">View on GitHub &rarr;</span>
+      </a>
 
     </div>
   </section>
 
   <!-- SKILLS -->
   <section class="section" id="skills">
-    <p class="section-label">Skills</p>
+    <p class="section-label">// skills</p>
     <div class="skills-groups">
       <div class="skills-group">
         <p class="skills-group-label">Design</p>
-        <ul>
-          <li>Figma</li>
-          <li>UI/UX Design</li>
-          <li>Prototyping</li>
-        </ul>
+        <div class="chip-row">
+          <span class="chip">Figma</span>
+          <span class="chip">UI/UX Design</span>
+          <span class="chip">Prototyping</span>
+        </div>
       </div>
       <div class="skills-group">
         <p class="skills-group-label">Frontend</p>
-        <ul>
-          <li>React.js</li>
-          <li>Next.js</li>
-          <li>JavaScript (ES6+)</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Tailwind CSS</li>
-        </ul>
+        <div class="chip-row">
+          <span class="chip">React.js</span>
+          <span class="chip">Next.js</span>
+          <span class="chip">JavaScript (ES6+)</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">Tailwind CSS</span>
+        </div>
       </div>
       <div class="skills-group">
         <p class="skills-group-label">Backend</p>
-        <ul>
-          <li>Node.js</li>
-          <li>MongoDB</li>
-          <li>REST APIs</li>
-        </ul>
+        <div class="chip-row">
+          <span class="chip">Node.js</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">REST APIs</span>
+        </div>
       </div>
       <div class="skills-group">
         <p class="skills-group-label">Tools</p>
-        <ul>
-          <li>Git / GitHub</li>
-          <li>VS Code</li>
-          <li>Figma</li>
-        </ul>
+        <div class="chip-row">
+          <span class="chip">Git / GitHub</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Figma</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <p class="section-label">About</p>
-    <div class="about-body">
-      <p>
-        I'm Netonna, a full stack developer studying Industrial Mathematics and Computer Science at Covenant University, where I hold a 4.30 GPA. I work across the stack — Figma for design, React and Tailwind on the frontend, Node.js on the backend.
-      </p>
-      <p>
-        Right now I'm interning at HabariPay, getting hands-on experience in a real engineering environment. Outside of that I build personal projects and take on freelance work. I like understanding how things fit together, not just making them look good.
-      </p>
+  <!-- EDUCATION & CERTIFICATES -->
+  <section class="section" id="education">
+    <p class="section-label">// education &amp; certificates</p>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <p class="exp-date">2024 — 2028</p>
+        </div>
+        <div class="exp-body">
+          <p class="exp-role">Covenant University</p>
+          <p class="exp-company">B.Sc. Industrial Mathematics &amp; Computer Science</p>
+          <p class="exp-desc">4.30 GPA <span class="muted">/ 5.00</span></p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <p class="exp-date">2022 — 2023</p>
+        </div>
+        <div class="exp-body">
+          <p class="exp-role">NIIT Programming School</p>
+          <p class="exp-company">Front End Web Development</p>
+          <p class="exp-desc">A brief two-month program covering the basics of HTML, CSS, and Django in Lagos, Nigeria.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <p class="exp-date">3 months</p>
+        </div>
+        <div class="exp-body">
+          <p class="exp-role">freeCodeCamp</p>
+          <p class="exp-company">JavaScript Algorithms and Data Structures</p>
+          <p class="exp-desc">
+            Gained proficiency in modern JavaScript (ES6+), algorithmic problem-solving,
+            data structures, object-oriented programming, and functional programming
+            through hands-on coding challenges and projects.
+          </p>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <footer>
-    <span class="footer-name">Netonna Ogbuefi, 2025</span>
+  <!-- CONTACT / FOOTER -->
+  <footer class="footer" id="contact">
+    <p class="section-label">// get in touch</p>
+    <h2 class="footer-headline">Building something?<br /><span class="hero-name-italic">Let's talk.</span></h2>
+    <a href="mailto:brad12kool@gmail.com" class="btn-primary footer-cta">brad12kool@gmail.com</a>
     <div class="footer-links">
       <a href="https://github.com/brad12kool" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/netonna-ogbuefi-b2aab9380/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://www.instagram.com/bradoggb/" target="_blank" rel="noopener">Instagram</a>
-      <a href="mailto:brad12kool@gmail.com">Email</a>
     </div>
+    <span class="footer-name"></span>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
